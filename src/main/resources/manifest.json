@@ -1,0 +1,19 @@
+{
+  "name": "Dutamovie21 - Situs Nonton Film Bioskop LK21 CGVINDO Layarkaca21 Cepat, Mudah, Dan Lengkap",
+  "pluginClassName": "com.dutamovie.DutaMovieProvider",
+  "version": 1,
+  "requiresResources": false,
+  "authors": [
+    "YourName"
+  ],
+  "description": "Plugin untuk Dutamovie21 - Situs Nonton Film Bioskop LK21 CGVINDO Layarkaca21 Cepat, Mudah, Dan Lengkap",
+  "repositoryUrl": "https://github.com/yourusername/DutaMovie",
+  "status": 1,
+  "language": "id",
+  "tvTypes": [
+    "Movie",
+    "TvSeries",
+    "AsianDrama"
+  ],
+  "iconUrl": "https://hidekielectronics.com/favicon.ico"
+}
