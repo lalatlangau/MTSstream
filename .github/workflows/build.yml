@@ -28,6 +28,7 @@ jobs:
           cd src
           chmod +x gradlew
           ./gradlew make
+          ./gradlew build
           cp build/*.cs3 $GITHUB_WORKSPACE/
 
       - name: Deploy to GitHub Pages

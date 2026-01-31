@@ -1,11 +1,20 @@
-plugins {
-    kotlin("jvm") version "1.9.24"
-    id("com.github.recloudstream") version "4.4.0"
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven("https://jitpack.io")
+    }
+
+    dependencies {
+        classpath("com.github.recloudstream:gradle:4.4.0")
+    }
 }
 
+apply(plugin = "cloudstream")
+
 repositories {
-    mavenCentral()
     google()
+    mavenCentral()
     maven("https://jitpack.io")
 }
 
