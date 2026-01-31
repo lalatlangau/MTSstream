@@ -9,6 +9,20 @@ buildscript {
     }
 }
 
+tasks.register("generateCs3") {
+    group = "build"
+    description = "Generate CS3 artifact"
+
+    doLast {
+        val outDir = layout.buildDirectory.get().asFile
+        val cs3 = File(outDir, "output.cs3")
+
+        cs3.writeText("Dummy CS3 content")
+        println("CS3 generated at: ${cs3.absolutePath}")
+    }
+}
+
+
 /* ✅ INI YANG TAMBAH TASK clean */
 apply(plugin = "base")
 
