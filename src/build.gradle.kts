@@ -4,12 +4,15 @@ buildscript {
         mavenCentral()
         maven("https://jitpack.io")
     }
-
     dependencies {
         classpath("com.github.recloudstream:gradle:4.4.0")
     }
 }
 
+/* ✅ INI YANG TAMBAH TASK clean */
+apply(plugin = "base")
+
+/* ✅ Cloudstream plugin */
 apply(plugin = "cloudstream")
 
 repositories {
