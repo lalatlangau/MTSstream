@@ -10,11 +10,24 @@ buildscript {
 }
 
 
-/* ✅ INI YANG TAMBAH TASK clean */
-apply(plugin = "base")
+plugins {
+    base       // beri task clean
+    java       // beri build, jar, test
+}
 
-/* ✅ Cloudstream plugin */
-apply(plugin = "cloudstream")
+group = "com.mtsstream"
+version = "1.0.0"
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
 
 repositories {
     google()
