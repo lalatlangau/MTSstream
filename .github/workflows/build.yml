@@ -29,8 +29,6 @@ jobs:
           chmod +x gradlew
           ./gradlew build
           ./gradlew tasks
-          ./gradlew generateCs3 build
-          cp build/libs/*.jar $GITHUB_WORKSPACE/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
